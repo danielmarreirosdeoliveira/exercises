@@ -1,0 +1,26 @@
+plugins {
+    id 'application'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+    id 'java'
+}
+
+mainClassName = 'bandit.ContextualBandit'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
+
+dependencies {
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib'
+    // beta7 breaks classpathresource symbol
+
+//    compile group: 'org.nd4j', name: 'nd4j-common', version: '1.0.0-beta6'
+//    compile group: 'org.nd4j', name: 'nd4j-native-api', version: '1.0.0-beta6'
+//    compile group: 'org.nd4j', name: 'nd4j-native', version: '1.0.0-beta6'
+    compile group: 'org.nd4j', name: 'nd4j-native-platform', version: '1.0.0-beta6'
+    compile group: 'org.deeplearning4j', name: 'deeplearning4j-core', version: '1.0.0-beta6'
+    testCompile "junit:junit:4.12"
+}

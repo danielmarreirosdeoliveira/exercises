@@ -1,0 +1,10 @@
+defmodule Mapsum do
+	def reduce([],_) do
+		0
+	end
+	def reduce([head|tail],fun) do
+		fun.(head)+reduce(tail,fun)
+	end
+end
+
+IO.puts Mapsum.reduce([1,2,3],&(&1*&1))
