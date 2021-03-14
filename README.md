@@ -16,3 +16,4 @@ Exercises from books - mostly functional programming and deeplearning related
 * (bclj)    Brave Clojure
 * (pex)     Programming Elixir 
 * (tfwh)    Thinking functionally with Haskell
+* (mclm)    Masterin Clojure Macros
