@@ -9,3 +9,5 @@
 (my-when (= 1 1) (prn "yes"))
 
 (eval '(if (= 1 1) (prn "yes")))
+
+(eval (list 'if '(= 1 1) (cons 'do '((prn "yes")))))
